@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Contenedor principal */
+#contenedor_principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    gap: 30px;
+}
+
+/* Contenedor de botones */
+#botones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 200px;
+}
+
+/* Estilos para los botones */
+button {
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+/* Botón para compositores del Renacimiento */
+#renacimiento {
+    background-color: #6A5ACD; /* Púrpura */
+}
+
+/* Botón para compositores del Barroco */
+#barroco {
+    background-color: #FF6347; /* Tomate */
+}
+
+/* Botón para compositores del Clasicismo */
+#clasicismo {
+    background-color: #32CD32; /* Verde */
+}
+
+/* Botón para todos los compositores */
+#todos {
+    background-color: #634863; /* Marrón */
+}
+
+/* Efecto de hover para los botones */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Contenedor de las fichas de los compositores */
+.compositores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px;
+    width: 100%;
+}
+
+/* Estilos para cada ficha de compositor */
+.compositor {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para las imágenes dentro de las fichas */
+.compositor img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Asegurar que las imágenes no sean demasiado grandes */
+.compositor img {
+    max-height: 250px;
+}
+
+/* Estilo para las fichas visibles */
+.show {
+    display: block;
+}
